@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  tomb = [1, 2, 3, 4, 5, 6];
+
+  constructor() {
+    console.log(this.tomb.filter(  (param: number) => param == 2));
+  }
 }
